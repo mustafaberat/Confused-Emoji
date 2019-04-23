@@ -1,0 +1,86 @@
+:root {
+  --color-face: #fff200;
+  --color-black: #414141;
+  --color-red-bright: #ee5253;
+  --color-red-faded: #a83d3d;
+  --color-white: #F3F3F3;
+  --boder-radius: 50%;
+  --size-face: 500px; 
+  --size-eye: 80px;
+  --size-orb: 45px;
+  --size-mouth: 150px;
+  --size-tongue: 110px;
+  --shadow: 10px 10px 18px #888888;;
+}
+
+body{
+  background-color: var(--color-white);
+}
+
+.circle{
+  position: absolute;
+	top: 50%;
+	left: 50%;
+  transform: translate(-50%,-50%);
+	height: var(--size-face);
+  width: var(--size-face);
+  background-color: var(--color-face);
+  border-radius: var(--boder-radius);
+  box-shadow: var(--shadow);
+  border: 2px solid var(--color-blue);
+}
+
+.eyes-line{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.eye{
+  height: var(--size-eye);
+  width: var(--size-eye);
+  background-color: var(--color-white);
+  border-radius: var(--boder-radius);
+}
+
+.orb{
+  position: relative;
+	top: 40%;
+  left: 40%;
+  transform: translate(-50%,-50%); 
+  height: var(--size-orb);
+  width: var(--size-orb);
+  background-color: var(--color-black);
+  border-radius: var(--boder-radius);
+}
+
+.mouth-line{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.mouth{
+  height: var(--size-mouth);
+  width: var(--size-mouth);
+  background-color: var(--color-black);
+  border-radius: var(--boder-radius);
+  overflow: hidden;
+}
+
+.tongue{
+  position: relative;
+	top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+  height: var(--size-tongue);
+  background-color: var(--color-red-bright);
+  box-shadow:inset -16px -16px 12px 0px var(--color-red-faded);
+  border-radius: var(--boder-radius);
+}
